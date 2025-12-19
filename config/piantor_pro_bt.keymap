@@ -17,8 +17,8 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            display-name = "Colemak-DH";
+        base_layer {
+            display-name = "BASE";
 
             // --------------------------------------------------------------
             // |  Q  |  W  |  E  |  R  |  T  |  Y  |  U   |  I  |  O  |  P  |
@@ -27,11 +27,11 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp SEMICOLON      &kp A  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O      &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp FSLH    &kp LGUI  &mo 1  &kp SPACE  &kp RET  &mo 2  &kp RALT
+  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp SEMICOLON      &kp A  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O      &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp FSLH    &lt 6 ESCAPE  &lt 4 SPACE  &lt 3 TAB  &lt 2 ENTER  &lt 1 BACKSPACE  &lt 5 DELETE
             >;
         };
 
-        lower_layer {
+        number_layer {
             display-name = "NUMBER";
 
             // ---------------------------------------------------------------
@@ -45,7 +45,7 @@
             >;
         };
 
-        raise_layer {
+        symbol_layer {
             display-name = "SYMBOL";
 
             // -------------------------------------------------------------
@@ -59,29 +59,29 @@
             >;
         };
 
-        extra_layer_1 {
-            display-name = "EXTRA 1";
+        mouse_layer {
+            display-name = "MOUSE";
             bindings = <
   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
-        extra_layer_2 {
-            display-name = "EXTRA 2";
+        nav_layer {
+            display-name = "NAV";
             bindings = <
   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
-        extra_layer_3 {
-            display-name = "EXTRA 3";
+        function_layer {
+            display-name = "FN";
             bindings = <
   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
-        extra_layer_4 {
-            display-name = "EXTRA 4";
+        media_layer {
+            display-name = "MEDIA";
             bindings = <
   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
