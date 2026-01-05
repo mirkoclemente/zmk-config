@@ -62,7 +62,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp APOS      &hrml LEFT_GUI A  &hrml LEFT_ALT R  &hrml LEFT_CONTROL S  &hrml LSHIFT T  &kp G  &kp M  &hrmr LEFT_SHIFT N  &hrmr RIGHT_CONTROL E  &hrmr RIGHT_ALT I  &hrmr RIGHT_GUI O      &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp QUESTION    &lt 3 ESCAPE  &lt 1 SPACE  &lt 2 TAB  &lt 2 ENTER  &lt 1 BACKSPACE  &lt 3 DELETE
+  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp APOS      &hrml LEFT_GUI A  &hrml LEFT_ALT R  &hrml LEFT_CONTROL S  &hrml LSHIFT T  &kp G  &kp M  &hrmr LEFT_SHIFT N  &hrmr RIGHT_CONTROL E  &hrmr RIGHT_ALT I  &hrmr RIGHT_GUI O      &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp QUESTION    &lt 3 ESCAPE  &lt 1 SPACE  &lt 2 TAB  &lt 2 ENTER  &lt 1 BACKSPACE  &lt 4 DELETE
             >;
         };
 
@@ -94,10 +94,17 @@
             >;
         };
 
-        bt_nav_layer {
-            display-name = "BT_NAV";
+        navigation_layer {
+            display-name = "NAV";
             bindings = <
-  &trans  &trans  &trans  &trans  &trans  &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp CAPS  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT      &bt BT_CLR  &rgb_ug RGB_TOG  &sys_reset  &bootloader  &studio_unlock  &kp INSERT  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans  &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans  &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO      &trans  &trans  &trans  &trans  &trans  &kp CAPS  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT      &trans  &trans  &trans  &trans  &trans  &kp INSERT  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        bluetooth_layer {
+            display-name = "BT";
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans      &bt BT_CLR  &rgb_ug RGB_TOG  &sys_reset  &bootloader  &studio_unlock  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
