@@ -49,6 +49,43 @@
         };
     };
 
+    macros {
+        undo_macro: undo_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(Z)>;
+            label = "UNDO_MACRO";
+        };
+
+        redo_macro: redo_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LS(Z))>;
+            label = "REDO_MACRO";
+        };
+
+        copy_macro: copy_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(C)>;
+            label = "COPY_MACRO";
+        };
+
+        cut_macro: cut_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(X)>;
+            label = "CUT_MACRO";
+        };
+
+        paste_macro: paste_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(V)>;
+            label = "PASTE_MACRO";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -97,7 +134,7 @@
         navigation_layer {
             display-name = "NAV";
             bindings = <
-  &trans  &trans  &trans  &trans  &trans  &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO      &trans  &trans  &trans  &trans  &trans  &kp CAPS  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT      &trans  &trans  &trans  &trans  &trans  &kp INSERT  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans  &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans  &kp LG(LS(Z))  &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(Z)      &trans  &trans  &trans  &trans  &trans  &kp CAPS  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT      &trans  &trans  &trans  &trans  &trans  &kp INSERT  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
