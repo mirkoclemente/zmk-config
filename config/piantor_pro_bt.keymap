@@ -101,7 +101,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp APOS      &hrml LEFT_GUI A  &hrml LEFT_ALT R  &hrml LEFT_CONTROL S  &hrml LSHIFT T  &kp G  &kp M  &hrmr LEFT_SHIFT N  &hrmr RIGHT_CONTROL E  &hrmr RIGHT_ALT I  &hrmr RIGHT_GUI O      &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp QUESTION    &lt 3 ESCAPE  &lt 1 SPACE  &lt 2 TAB  &lt 2 ENTER  &lt 1 BACKSPACE  &lt 4 DELETE
+  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp APOS      &hrml LEFT_GUI A  &hrml LEFT_ALT R  &hrml LEFT_CONTROL S  &hrml LSHIFT T  &kp G  &kp M  &hrmr LEFT_SHIFT N  &hrmr RIGHT_CONTROL E  &hrmr RIGHT_ALT I  &hrmr RIGHT_GUI O      &hrml CAPS Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &hrmr CAPS QUESTION    &lt 3 ESCAPE  &lt 1 SPACE  &lt 2 TAB  &lt 2 ENTER  &lt 1 BACKSPACE  &lt 4 DELETE
             >;
         };
 
@@ -136,7 +136,7 @@
         navigation_layer {
             display-name = "NAV";
             bindings = <
-  &trans  &trans  &trans  &trans  &trans  &kp LG(LS(Z))  &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(Z)      &trans  &trans  &trans  &trans  &trans  &kp CAPS  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT      &trans  &trans  &trans  &trans  &trans  &kp INSERT  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans  &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans  &kp LG(LS(Z))  &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(Z)      &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT      &trans  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
