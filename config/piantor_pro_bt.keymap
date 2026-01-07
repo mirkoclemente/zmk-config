@@ -38,6 +38,17 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 21 22 23 24 20>;
         };
+
+        lhk: lhk {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LHK";
+            bindings = <&kp>, <&tog>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+        };
     };
 
     combos {
@@ -101,7 +112,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp APOS      &hrml LEFT_GUI A  &hrml LEFT_ALT R  &hrml LEFT_CONTROL S  &hrml LSHIFT T  &kp G  &kp M  &hrmr LEFT_SHIFT N  &hrmr RIGHT_CONTROL E  &hrmr RIGHT_ALT I  &hrmr RIGHT_GUI O      &hrml CAPS Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &hrmr CAPS QUESTION    &lt 3 ESCAPE  &lt 1 SPACE  &lt 2 TAB  &lt 2 ENTER  &lt 1 BACKSPACE  &lt 4 DELETE
+  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp APOS      &hrml LEFT_GUI A  &hrml LEFT_ALT R  &hrml LEFT_CONTROL S  &hrml LSHIFT T  &kp G  &kp M  &hrmr LEFT_SHIFT N  &hrmr RIGHT_CONTROL E  &hrmr RIGHT_ALT I  &hrmr RIGHT_GUI O      &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp QUESTION    &lhk GLOBE 3  &lt 1 SPACE  &lt 2 TAB  &lt 2 ENTER  &lt 1 BACKSPACE  &lt 4 DELETE
             >;
         };
 
@@ -136,7 +147,7 @@
         fn_navigation_layer {
             display-name = "FN_NAV";
             bindings = <
-  &kp F12  &kp F7  &kp F8  &kp F9  &trans  &kp LG(LS(Z))  &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(Z)      &hrml LEFT_GUI F11  &hrml LEFT_ALT F4  &hrml LEFT_CONTROL F5  &hrml LEFT_SHIFT F6  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT      &hrml CAPS F10  &kp F1  &kp F2  &kp F3  &trans  &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans  &trans  &trans  &trans  &trans  &trans
+  &kp F12  &kp F7  &kp F8  &kp F9  &trans  &kp LG(LS(Z))  &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(Z)      &hrml LEFT_GUI F11  &hrml LEFT_ALT F4  &hrml LEFT_CONTROL F5  &hrml LEFT_SHIFT F6  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT      &kp F10  &kp F1  &kp F2  &kp F3  &trans  &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &lhk GLOBE 0  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
