@@ -49,6 +49,17 @@
             flavor = "balanced";
             hold-trigger-on-release;
         };
+
+        lt_bs_layer: lt_bs_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_BS_LAYER";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     combos {
@@ -112,7 +123,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp APOS      &hrml LEFT_GUI A  &hrml LEFT_ALT R  &hrml LEFT_CONTROL S  &hrml LSHIFT T  &kp G  &kp M  &hrmr LEFT_SHIFT N  &hrmr RIGHT_CONTROL E  &hrmr RIGHT_ALT I  &hrmr RIGHT_GUI O      &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp QUESTION    &ht CAPS ESCAPE  &lt 3 SPACE  &lt 2 TAB  &lt 1 ENTER  &lt 0 BACKSPACE  &lt 4 DEL
+  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp APOS      &hrml LEFT_GUI A  &hrml LEFT_ALT R  &hrml LEFT_CONTROL S  &hrml LSHIFT T  &kp G  &kp M  &hrmr LEFT_SHIFT N  &hrmr RIGHT_CONTROL E  &hrmr RIGHT_ALT I  &hrmr RIGHT_GUI O      &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp QUESTION    &ht CAPS ESCAPE  &lt 3 SPACE  &lt 2 TAB  &lt 1 ENTER  &lt_bs_layer 3 BACKSPACE  &lt 4 DEL
             >;
         };
 
